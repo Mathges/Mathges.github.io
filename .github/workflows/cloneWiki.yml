@@ -10,6 +10,5 @@ jobs:
         name: Checkout repo
         with: 
           repository: Mathges/Mathges.github.io
-      - uses: |
-        cd /docs
+      - run: |
         git clone https://github.com/Mathges/Mathges.wiki.git 
