@@ -12,4 +12,4 @@ jobs:
         with: 
           repository: Mathges/Mathges.github.io
           path: /docs
-        run: git clone https://github.com/Mathges/Mathges.wiki.git 
+      run: git clone https://github.com/Mathges/Mathges.wiki.git 
