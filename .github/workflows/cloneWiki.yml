@@ -1,0 +1,15 @@
+on:
+  gollum
+
+jobs:
+  update-gh-pages:
+    name: Wiki Repo Cloning
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+        name: Checkout repo
+        with: 
+          repository: Mathges/Mathges.github.io
+      - uses: |
+        cd /docs
+        git clone https://github.com/Mathges/Mathges.wiki.git 
