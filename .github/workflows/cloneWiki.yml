@@ -7,9 +7,10 @@ jobs:
     name: Wiki Repo Cloning
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v3
-        name: Checkout repo
+      - name: Checkout repo
+        uses: actions/checkout@v3
         with: 
           repository: Mathges/Mathges.github.io
           path: /docs
+      - name: Cloning wiki
         run: git clone https://github.com/Mathges/Mathges.wiki.git 
