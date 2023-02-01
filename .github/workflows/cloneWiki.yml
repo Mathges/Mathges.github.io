@@ -1,5 +1,5 @@
 on:
-  gollum
+  gollum:
   workflow_dispatch:
 
 jobs:
